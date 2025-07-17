@@ -1,0 +1,35 @@
+Triton ResNet18 Simple Benchmark
+========================================
+
+=== Correctness Test ===
+Triton output shape: torch.Size([4, 10])
+PyTorch output shape: torch.Size([4, 10])
+✓ Output shapes match
+✓ Triton output is valid
+✓ Triton output is finite
+Using device: cuda
+
+=== Triton ResNet18 Performance Test ===
+
+Batch size: 1
+Triton ResNet18: 242.07 ms
+PyTorch ResNet18: 1.84 ms
+Speedup: 0.01x
+
+Batch size: 4
+Triton ResNet18: 1371.81 ms
+PyTorch ResNet18: 3.18 ms
+Speedup: 0.00x
+
+Batch size: 8
+
+Triton ResNet18: 7245.13 ms
+PyTorch ResNet18: 7.13 ms
+Speedup: 0.00x
+
+=== Memory Usage Test ===
+Triton ResNet18 memory: 152.3 MB
+PyTorch ResNet18 memory: 153.2 MB
+Memory difference: 0.9 MB
+
+Benchmark completed!
